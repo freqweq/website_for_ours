@@ -13,10 +13,11 @@ body {
 
 html {
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(23, 23, 23);
 }
 
 /* TRANSITIONS */
@@ -27,22 +28,22 @@ a,
 }
 
 /* DESKTOP NAV */
-
 nav,
 .nav-links {
   display: flex;
 }
 
 nav {
+  background-color: rgba(255, 255, 255, 0);
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 12vh;
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 a {
@@ -59,13 +60,22 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.56rem;
+  display: flex;
 }
 
 .logo:hover {
   cursor: default;
 }
 
+.logo img{
+  width: 100px;
+  vertical-align: middle;
+}
+
+.logo p{
+  align-self: center;
+}
 /* HAMBURGER MENU */
 
 #hamburger-nav {
@@ -97,7 +107,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -159,14 +169,20 @@ section {
 .section-container {
   display: flex;
 }
-
 /* PROFILE SECTION */
 
 #profile {
-  display: flex;
   justify-content: center;
+  margin: 0;
+  width: 100%;
+  display: flex;
   gap: 5rem;
-  height: 80vh;
+  height: 90vh;
+  background-image: url(assets/214026925-modern-house-with-solar-panels-on-the-roof-the-new-energy-generative-ai.png);
+}
+
+.section__text h1{
+  color: #ffffff;
 }
 
 .section__pic-container {
@@ -181,8 +197,15 @@ section {
   text-align: center;
 }
 
+.section__text h2{
+  color: rgb(92, 201, 92);
+  font-size: 35px;
+  font-weight: 100;
+}
+
 .section__text p {
   font-weight: 600;
+  color: rgb(255, 255, 255);
 }
 
 .section__text__p1 {
@@ -197,13 +220,6 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
-}
-
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
 }
 
 /* BUTTONS */
@@ -265,6 +281,7 @@ section {
 
 #about {
   position: relative;
+  text-align: center;
 }
 
 .about-containers {
@@ -294,22 +311,23 @@ section {
 }
 
 .arrow {
-  position: absolute;
-  right: -5rem;
   bottom: 2.5rem;
+  justify-content: center;
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 2.5rem;
   flex: 1;
   background: white;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
 
+
 .section-container {
+  justify-content: center;
   gap: 4rem;
   height: 80%;
 }
@@ -359,10 +377,18 @@ article .icon {
   cursor: default;
 }
 
+
 /* PROJECTS SECTION */
 
 #projects {
   position: relative;
+}
+
+
+.section__text svg{
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .color-container {
@@ -431,4 +457,87 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.selected-lang{
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
+
+.selected-lang::before{
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(https://flagsapi.com/GB/flat/32.png);
+}
+
+.lang-menu{
+  margin-top: 0px;
+}
+
+.lang-menu ul{
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid #f2f2f2f2;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.lang-menu ul li{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang-menu ul li a::before{
+  content: '';
+  display: inline-block;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.lang-menu ul li a{
+  display: block;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.ua::before{
+  background-image: url(https://flagsapi.com/UA/flat/32.png);
+}
+
+.en::before{
+  background-image: url(https://flagsapi.com/GB/flat/32.png);
+}
+
+.lang-menu:hover ul{
+  display: block;
+}
+
+#pro-nas{
+  margin: 0;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.text-container{
+  align-self: center;
+  vertical-align: middle;
+  padding: 100px 20px;
+  font-size: 17px;
+}
+
+.section__pic-container{
+  padding: 0 20px;
+  justify-content: center;
 }
