@@ -421,6 +421,13 @@ article .icon {
   height: 70vh;
 }
 
+.contact svg{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vh;
+}
+
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
@@ -485,6 +492,7 @@ footer p {
   background-color: #ffffff;
   border: 1px solid #f2f2f2f2;
   box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  height: 87px;
   display: none;
   position: absolute;
   border-radius: 10px;
