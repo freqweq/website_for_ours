@@ -181,6 +181,10 @@ section {
   background-image: url(assets/214026925-modern-house-with-solar-panels-on-the-roof-the-new-energy-generative-ai.png);
 }
 
+.section__text svg{
+  bottom: 0;
+  left: 0;
+}
 .section__text h1{
   color: #ffffff;
 }
@@ -382,13 +386,6 @@ article .icon {
 
 #projects {
   position: relative;
-}
-
-
-.section__text svg{
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .color-container {
