@@ -313,12 +313,6 @@ section {
 .about-pic {
   border-radius: 2rem;
 }
-
-.arrow {
-  bottom: 2.5rem;
-  justify-content: center;
-}
-
 .details-container {
   padding: 2.5rem;
   flex: 1;
